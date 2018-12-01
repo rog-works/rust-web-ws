@@ -6,3 +6,7 @@ version = "0.1.0"
 rocket = "*"
 rocket_codegen = "*"
 rocket_contrib = { version = "*", features = ["json"] }
+
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
