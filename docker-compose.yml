@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    container_name: rust-web-app
+    build: ./docker
+    image: rust-web-app:latest
+    volumes:
+      - ./src:/opt/app
