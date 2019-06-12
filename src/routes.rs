@@ -1,13 +1,13 @@
-use rocket_contrib::Json;
+use rocket_contrib::json::Json;
 use models::Device;
 
 #[get("/")]
-fn index() -> &'static str {
+pub fn index() -> &'static str {
 	"Hello, world!"
 }
 
 #[get("/devices")]
-fn devices() -> Json<Vec<Device>> {
+pub fn devices() -> Json<Vec<Device>> {
 	Json(vec![Device {
 		id: 1,
 		name: "light".into(),

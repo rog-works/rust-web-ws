@@ -1,4 +1,4 @@
-FROM rust:1.30-slim
+FROM rust:1.35-slim
 
 RUN rustup update nightly \
  && rustup default nightly
