@@ -5,6 +5,6 @@ services:
     build: ./docker
     image: rust-web-app:latest
     ports:
-      - 8000:8000
+      - 8000:80
     volumes:
       - ./:/opt/app
